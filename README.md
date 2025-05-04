@@ -19,30 +19,6 @@ A productivity app to schedule, track, and review deep work sessions.
 
 ---
 
-## Project Structure
-infinijith_challange/
-│
-├── backend/                 # FastAPI backend
-│   ├── main.py
-│   ├── requirements.txt
-│   ├── alembic/             # Alembic migrations
-│   └── ...
-│
-├── deepwork_Frontend/       # React frontend
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   └── ...
-│
-├── sdk/                     # (Optional) Generated Python SDK client
-│   └── deepwork_sdk/
-│       ├── setupdev.bat     # Windows setup script
-│       ├── runapplication.bat # Windows run script
-│       └── .gitignore
-
-
----
-
 ## Getting Started
 
 ### 1. Clone the repository
