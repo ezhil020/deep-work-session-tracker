@@ -42,13 +42,15 @@ Start the React frontend at http://localhost:3000
 
 
 4. manual setup (if not using script)
- 4.1 Backend
+   
+4.1 Backend
 cd backend
 python -m venv env
 env\Scripts\activate
 pip install -r requirements.txt
 alembic upgrade head
 uvicorn main:app --reload
+
 
 4.2 Frontend
 
