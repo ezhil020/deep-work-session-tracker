@@ -102,3 +102,5 @@ alembic upgrade head
 
 The `sdk/` folder contains a generated Python client for the API.
 
+sdk/ sdk_usage.py -  sample script using the SDK
+
