@@ -101,5 +101,4 @@ alembic upgrade head
 ## Python SDK
 
 The `sdk/` folder contains a generated Python client for the API.
-```
 
