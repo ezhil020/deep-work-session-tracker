@@ -104,3 +104,21 @@ The `sdk/` folder contains a generated Python client for the API.
 
 sdk/ sdk_usage.py -  sample script using the SDK
 
+
+## Application Screenshots
+
+### schedule a session
+![shedule a session](screenshots/1.png)
+
+### start a session
+![start a session](screenshots/2.png)
+
+### Active sessions
+![active sessions](screenshots/3.png)
+
+###session history
+![session history](screenshots/4.png)
+
+###weekly_report
+![weekly report](screenshots/5.png)
+
