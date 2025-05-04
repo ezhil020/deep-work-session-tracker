@@ -116,9 +116,9 @@ sdk/ sdk_usage.py -  sample script using the SDK
 ### Active sessions
 ![active sessions](screenshots/3.png)
 
-###session history
+### Session history
 ![session history](screenshots/4.png)
 
-###weekly_report
+### Weekly_report
 ![weekly report](screenshots/5.png)
 
