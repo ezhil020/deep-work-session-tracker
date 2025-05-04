@@ -1,0 +1,228 @@
+ 
+/* ActiveSession.css - Styling for active session management */
+
+.active-session-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px var(--shadow-color);
+    position: relative;
+  }
+  
+  .session-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .session-header h2 {
+    margin: 0;
+    color: var(--dark-color);
+    font-size: 1.8rem;
+  }
+  
+  .session-status {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .session-status .active {
+    color: var(--success-color);
+  }
+  
+  .session-status .paused {
+    color: var(--warning-color);
+  }
+  
+  .session-goal {
+    background-color: var(--light-color);
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .session-goal h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    color: var(--dark-color);
+  }
+  
+  .session-goal p {
+    margin: 0;
+    color: var(--secondary-color);
+  }
+  
+  .time-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .time-remaining h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    color: var(--dark-color);
+  }
+  
+  .countdown {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  .duration-info {
+    text-align: right;
+  }
+  
+  .duration-info p {
+    margin: 0 0 0.5rem 0;
+    color: var(--secondary-color);
+  }
+  
+  .progress-bar-container {
+    height: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: width 0.5s ease;
+  }
+  
+  .interruptions-info {
+    margin-bottom: 2rem;
+  }
+  
+  .interruptions-info h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    color: var(--dark-color);
+  }
+  
+  .interruptions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+  }
+  
+  .interruptions-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .interruption-time {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+  }
+  
+  .interruption-reason {
+    font-weight: 600;
+    color: var(--dark-color);
+  }
+  
+  .warning {
+    color: var(--danger-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    background-color: rgba(220, 53, 69, 0.1);
+    border-radius: 4px;
+  }
+  
+  .session-controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .session-controls button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .pause-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    z-index: 1000;
+  }
+  
+  .pause-dialog h3 {
+    margin: 0 0 1.5rem 0;
+    color: var(--dark-color);
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .pause-reason-select,
+  .pause-reason-input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .pause-reason-select:focus,
+  .pause-reason-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+  }
+  
+  .dialog-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .dialog-buttons button {
+    flex: 1;
+  }
+  
+  .no-active-session {
+    text-align: center;
+    padding: 3rem;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .active-session-container {
+      padding: 1.5rem;
+    }
+    
+    .time-display {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .duration-info {
+      text-align: left;
+    }
+    
+    .session-controls {
+      flex-direction: column;
+    }
+    
+    .countdown {
+      font-size: 2rem;
+    }
+  }

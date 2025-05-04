@@ -1,0 +1,250 @@
+.weekly-report-container {
+    max-width: 64rem;
+    margin: 2rem auto;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+    font-family: 'Inter', Arial, sans-serif;
+  }
+  
+  .report-header {
+    background: #2563eb;
+    padding: 1.5rem 2rem;
+  }
+  
+  .report-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .report-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .report-date {
+    display: flex;
+    align-items: center;
+    color: #dbeafe;
+    font-size: 1rem;
+  }
+  
+  .report-calendar-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .stats-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    background: #f9fafb;
+  }
+  
+  @media (min-width: 768px) {
+    .stats-cards {
+      grid-template-columns: 1fr 2fr;
+    }
+    .stats-card-analytics {
+      grid-column: span 1 / span 1;
+    }
+  }
+  
+  .stats-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .stats-card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.75rem;
+  }
+  
+  .stats-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .stats-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .stats-label-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .status-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 9999px;
+    font-size: 1rem;
+  }
+  
+  .status-completed {
+    background: #bbf7d0;
+    color: #16a34a;
+  }
+  
+  .status-interrupted {
+    background: #fef9c3;
+    color: #ca8a04;
+  }
+  
+  .status-abandoned {
+    background: #fecaca;
+    color: #dc2626;
+  }
+  
+  .status-overdue {
+    background: #fed7aa;
+    color: #ea580c;
+  }
+  
+  .status-default {
+    color: #6b7280;
+  }
+  
+  .stats-label {
+    color: #6b7280;
+  }
+  
+  .stats-value {
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+  
+  .stats-value-completed { color: #16a34a; }
+  .stats-value-interrupted { color: #ca8a04; }
+  .stats-value-abandoned { color: #dc2626; }
+  .stats-value-overdue { color: #ea580c; }
+  
+  .time-analytics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+  }
+  
+  .time-analytics-content {
+    text-align: center;
+  }
+  
+  .time-analytics-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .time-analytics-icon {
+    font-size: 2rem;
+    color: #2563eb;
+    margin-right: 0.5rem;
+  }
+  
+  .time-analytics-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2563eb;
+  }
+  
+  .time-analytics-label {
+    color: #6b7280;
+    margin-top: 0.5rem;
+  }
+  
+  .sessions-table-section {
+    padding: 1.5rem 2rem;
+  }
+  
+  .sessions-table-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 1rem;
+  }
+  
+  .sessions-table-wrapper {
+    overflow-x: auto;
+  }
+  
+  .sessions-table {
+    min-width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+  }
+  
+  .sessions-table th,
+  .sessions-table td {
+    padding: 0.75rem 1.5rem;
+    text-align: left;
+  }
+  
+  .sessions-table th {
+    background: #eff6ff;
+    color: #2563eb;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  
+  .sessions-table-row {
+    border-bottom: 1px solid #e5e7eb;
+    transition: background 0.2s;
+  }
+  
+  .sessions-table-row:hover {
+    background: #f3f4f6;
+  }
+  
+  .sessions-table-title-cell {
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+  .status-cell {
+    display: flex;
+    align-items: center;
+    background: #f3f4f6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+  }
+  
+  .status-label {
+    margin-left: 0.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  
+  .sessions-table-duration-cell {
+    font-weight: 600;
+  }
+  
+  .footer {
+    background: #f9fafb;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.875rem;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .footer-dot {
+    color: #2563eb;
+  }
+  
