@@ -1,4 +1,3 @@
-Here's your content formatted properly in markdown (`README.md`) style:
 
 ```markdown
 # Deep Work Session Tracker
@@ -102,8 +101,5 @@ alembic upgrade head
 ## Python SDK
 
 The `sdk/` folder contains a generated Python client for the API.
-
-See `sdk/deepwork_sdk/README.md` for usage instructions.
 ```
 
-This is now properly formatted and ready to be added to your `README.md` file. Let me know if you'd like me to modify or add anything!
