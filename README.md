@@ -33,8 +33,10 @@ Set up a Python virtual environment and install backend dependencies
 Run Alembic migrations to set up the database
 Install frontend dependencies
 
+
 3. Run the Application
 From the project root, run:
+
 runapplication.bat
 
 Start the FastAPI backend at http://localhost:8000
@@ -56,6 +58,7 @@ uvicorn main:app --reload
 
 cd deepwork_Frontend
 npm install
+
 npm start
 
 Alembic Migrations
