@@ -49,8 +49,13 @@ This will:
 - Install frontend dependencies.
 
 ---
+### 3. To initialize database
+from the backend folder ,run :
+```bash
+python execute_sql.py
+```
 
-### 3. Run the Application
+### 4. Run the Application
 
 From the project root, run:
 
@@ -62,6 +67,8 @@ runapplication.bat
 - Start the React frontend at [http://localhost:3000](http://localhost:3000).
 
 ---
+
+
 
 ### 4. Manual Setup (if not using script)
 
