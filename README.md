@@ -1,5 +1,4 @@
 
-```markdown
 # Deep Work Session Tracker
 
 A productivity app to schedule, track, and review deep work sessions.  
